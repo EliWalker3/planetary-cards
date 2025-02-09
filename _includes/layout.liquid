@@ -9,13 +9,15 @@ title: Planetary Playing Cards
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/styles/screen.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <div class="card-stack">
     <h1>Planetary Playing Cards</h1>
-    <div class="grid">
+    <div class="grid" data-scroll>
       {{ content }}
     </div>
   </div>
+  {% include 'scroll' %}
 </body>
 </html>
