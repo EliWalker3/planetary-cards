@@ -1,50 +1,98 @@
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
+    color: #eeeeee;
+    background: #333333;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+.card-stack {
+    width: 1200px;
+    padding: 40px;    
+    margin: 0 auto;
+    text-align: center;
 }
 
-nav ul li a {
-    display: inline-block;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    gap: 20px;
+}
+
+.sun {
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 1.5em;
+}
+
+.card {
+    background-color: #555555;
     padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+    border-radius: 10px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.sun .circle {
+    width: 275px;
+    height: 275px;
 }
 
-img.about {
-    opacity: 0.5;
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sun .circle {
+background: radial-gradient(circle, #ffe416, #ff7700);
+}
+
+.mercury .circle {
+background: radial-gradient(circle, #a6a6a6, #595959);
+}
+
+.venus .circle {
+background: radial-gradient(circle, #fcebb9, #fcb36a);
+}
+
+.earth .circle {
+background: radial-gradient(circle, #33ff5f, #0256ab);
+}
+
+.mars .circle {
+background: radial-gradient(circle, #ff4d4d, #b34200);
+}
+
+.jupiter .circle {
+background: radial-gradient(circle, #ffbf66, #cc6600);
+}
+
+.saturn .circle {
+background: radial-gradient(circle, #936915, #b38f00);
+}
+
+.uranus .circle {
+background: radial-gradient(circle, #56c2f9, #87caeb);
+}
+
+.neptune .circle {
+background: radial-gradient(circle, #3366ff, #04047c);
 }
